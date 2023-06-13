@@ -1,15 +1,10 @@
 import '../css/card.css'
 
-export default function Card () {
 
-    const producto = {
-        imagen: "imagenes/gatitos.webp",
-        titulo: 'Fotos de Chipannoli',
-        descripcion: 'Descripcion de las fotos de Chipannoli',
-        precio: 94629,
-        envio: true
-    }
 
+export default function Card ({producto}) {
+    // const producto = props.producto
+    // const {mensaje} = props
     return (
         <div className="card">
             <img src={producto.imagen} alt="" />
