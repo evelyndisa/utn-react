@@ -1,21 +1,15 @@
 import Card from './Card'
+import data from '../data_tarjetas.json'
 import '../css/cardWrapper.css'
 
-export default function CardWrapper () {
-    const product = {
-        imagen: "imagenes/gatitos.webp",
-        titulo: 'Fotos de Chipannoli',
-        descripcion: 'Descripcion de las fotos de Chipannoli',
-        precio: 94629,
-        envio: true
-    }
+export default function CardWrapper() {
     return (
         <div className='wrapper'>
             <h2>Variedad de gatitos</h2>
             <div className='grilla'>
-
-            {/*producto es el nombre del dato que vamos a enviar: objeto producto */}
-                <Card producto = {product}/>
+                {data.map(elemento => (
+                    <Card key={elemento.id} producto={elemento} />
+                ))}
             </div>
         </div>
     )
