@@ -4,6 +4,7 @@ import CardWrapper from './components/CardWrapper';
 import EjemploEventos from './components/EjemploEventos'
 import Contador from './components/Contador';
 import Pokemon from './components/Pokemon';
+import PokemonAsync from './components/PokemonAsync';
 
 function App() {
   const numeros = [23,34,35,56]
@@ -26,7 +27,7 @@ function App() {
         })}
         <Contador />
         <Pokemon/>
-      
+        <PokemonAsync />
     </div>
   );
 }
