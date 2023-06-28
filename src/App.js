@@ -3,11 +3,13 @@ import Titulo from './components/Titulo';
 import CardWrapper from './components/CardWrapper';
 import EjemploEventos from './components/EjemploEventos'
 import Contador from './components/Contador';
+import Pokemon from './components/Pokemon';
 
 function App() {
   const numeros = [23,34,35,56]
   return (
     <div className="App">
+      
       <EjemploEventos />
         <Titulo
         nombre='eve'
@@ -23,6 +25,8 @@ function App() {
         )
         })}
         <Contador />
+        <Pokemon/>
+      
     </div>
   );
 }
